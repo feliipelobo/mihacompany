@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Miha Company — Motos e Scooters Elétricas</title>
+  <meta name="description" content="Motos, scooters, choppers e bikes elétricas. Veja cada modelo em 360° e fale direto com a Miha Company pelo WhatsApp.">
+  <meta name="theme-color" content="#0a0b0e">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miha Company — Mobilidade Elétrica">
+  <meta property="og:description" content="Motos, scooters e bikes elétricas. Veja em 360° e peça seu orçamento pelo WhatsApp.">
+  <meta property="og:image" content="assets/img/logo-512.png">
+
+  <link rel="icon" type="image/png" href="assets/img/logo-192.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/img/riding-front.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="brand" aria-label="Miha Company — início">
+        <img src="assets/img/logo-192.png" alt="" width="44" height="44" class="brand__logo">
+        <span class="brand__name">MIHA <small>COMPANY</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#modelos">Modelos</a>
+        <a href="#experiencia">Por que elétrica</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--wa btn--sm nav__cta" data-wa="Olá, Miha Company! Gostaria de mais informações sobre os modelos." href="#" target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-wa"/></svg> WhatsApp
+        </a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="eyebrow">Mobilidade elétrica premium</span>
+          <h1>Liberdade sobre duas rodas, <em>sem combustível.</em></h1>
+          <p class="lead">Motos off-road, scooters, choppers e bikes elétricas selecionadas pela Miha Company. Gire cada modelo em 360°, compare e fale com a gente no WhatsApp.</p>
+          <div class="hero__actions">
+            <a href="#modelos" class="btn btn--primary">Ver modelos <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a href="#" class="btn btn--ghost" data-wa="Olá, Miha Company! Quero saber mais sobre as motos elétricas." target="_blank" rel="noopener">
+              <svg class="ico"><use href="#i-wa"/></svg> Falar com consultor
+            </a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt id="statModels">9</dt><dd>modelos</dd></div>
+            <div><dt>360°</dt><dd>visualização</dd></div>
+            <div><dt>100%</dt><dd>elétricas</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal" id="heroVisual">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <img src="assets/img/riding-front.jpg" alt="Moto elétrica off-road Riding Times X" width="1536" height="1024" class="hero__bike" id="heroBike">
+          <button class="hero__tag" data-open="riding-times">
+            <span class="hero__tag-dot"></span>
+            <span><strong>Riding Times X</strong><small>Toque para ver em 360°</small></span>
+          </button>
+        </div>
+      </div>
+      <a href="#modelos" class="hero__scroll" aria-label="Rolar para os modelos"><span></span></a>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section class="section" id="modelos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Escolha a sua</h2>
+          <p>Toque em um modelo para girar em 360°, dar zoom nos detalhes e pedir o valor.</p>
+        </div>
+
+        <div class="filters reveal" id="filters" role="tablist" aria-label="Filtrar por categoria"></div>
+
+        <div class="grid" id="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Por que elétrica</span>
+          <h2>Mais economia, menos barulho</h2>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feature__ico"><svg class="ico"><use href="#i-bolt"/></svg></div>
+            <h3>Zero combustível</h3>
+            <p>Recarregue na tomada e esqueça o posto. O custo por quilômetro é uma fração da moto a gasolina.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__ico"><svg class="ico"><use href="#i-leaf"/></svg></div>
+            <h3>Silenciosa e limpa</h3>
+            <p>Sem fumaça, sem ruído de motor e com manutenção muito mais simples.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__ico"><svg class="ico"><use href="#i-route"/></svg></div>
+            <h3>Para cada estilo</h3>
+            <p>Da trilha ao centro da cidade: modelos off-road, urbanos, chopper e bikes.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__ico"><svg class="ico"><use href="#i-chat"/></svg></div>
+            <h3>Atendimento direto</h3>
+            <p>Tire dúvidas, peça fotos e vídeos e negocie direto com a gente pelo WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta reveal">
+          <img src="assets/img/logo-192.png" alt="" width="88" height="88" class="cta__logo">
+          <h2>Encontrou a sua?</h2>
+          <p>Chame a Miha Company no WhatsApp e receba valores, condições de pagamento e disponibilidade.</p>
+          <a href="#" class="btn btn--wa btn--lg" data-wa="Olá, Miha Company! Vi o catálogo e gostaria de um orçamento." target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-wa"/></svg> <span data-wa-number>(47) 99632-1487</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="brand">
+        <img src="assets/img/logo-192.png" alt="" width="36" height="36" class="brand__logo">
+        <span class="brand__name">MIHA <small>COMPANY</small></span>
+      </a>
+      <p class="footer__copy">© <span id="year"></span> Miha Company. Imagens ilustrativas. Valores e especificações sujeitos a alteração.</p>
+    </div>
+  </footer>
+
+  <!-- Lista de interesse -->
+  <div class="wishbar" id="wishbar" hidden>
+    <div class="wishbar__info"><strong id="wishCount">0</strong> <span id="wishLabel">modelos na sua lista</span></div>
+    <button class="wishbar__clear" id="wishClear" aria-label="Limpar lista">Limpar</button>
+    <a href="#" class="btn btn--wa btn--sm" id="wishSend" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg> Pedir orçamento</a>
+  </div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="#" class="wa-float" id="waFloat" data-wa="Olá, Miha Company! Gostaria de mais informações." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg class="ico"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- ============ MODAL PRODUTO ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" tabindex="-1">
+      <button class="modal__close" data-close aria-label="Fechar"><svg class="ico"><use href="#i-x"/></svg></button>
+      <div class="modal__viewer" id="mViewer"></div>
+      <div class="modal__info">
+        <span class="chip" id="mCat"></span>
+        <h2 id="mTitle"></h2>
+        <p class="modal__tagline" id="mTagline"></p>
+        <div class="price price--lg" id="mPrice"></div>
+        <div class="modal__colors" id="mColors"></div>
+        <h3 class="modal__sub">Destaques</h3>
+        <ul class="highlights" id="mHighlights"></ul>
+        <h3 class="modal__sub">Especificações</h3>
+        <dl class="specs" id="mSpecs"></dl>
+        <div class="modal__actions">
+          <a href="#" class="btn btn--wa btn--block" id="mWa" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg> Quero mais informações</a>
+          <div class="modal__row">
+            <button class="btn btn--ghost" id="mWish"><svg class="ico"><use href="#i-plus"/></svg> <span>Adicionar à lista</span></button>
+            <button class="btn btn--ghost" id="mShare"><svg class="ico"><use href="#i-share"/></svg> Compartilhar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ============ ÍCONES ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.36 9.36 0 0 1-1.44-5c0-5.18 4.22-9.4 9.42-9.4 2.51 0 4.87.98 6.65 2.76a9.34 9.34 0 0 1 2.75 6.65c0 5.19-4.22 9.4-9.41 9.4m8.01-17.42A11.26 11.26 0 0 0 12.05.75C5.81.75.73 5.83.73 12.07c0 2 .52 3.94 1.51 5.65L.64 23.25l5.65-1.48a11.3 11.3 0 0 0 5.75 1.47h.01c6.24 0 11.32-5.08 11.32-11.32 0-3.02-1.18-5.87-3.31-8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></g></symbol>
+    <symbol id="i-360" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="10" ry="4.5"/><path d="M12 7.5V3M9.5 5L12 2.5 14.5 5"/></g></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M11 8v6M8 11h6"/></g></symbol>
+    <symbol id="i-zoom-out" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6"/></g></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l7-7"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H16a3.5 3.5 0 0 0 0-7H8a3.5 3.5 0 0 1 0-7h7.5"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></g></symbol>
+  </svg>
+
+  <script src="js/products.js"></script>
+  <script src="js/viewer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
