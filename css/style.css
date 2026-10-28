@@ -203,6 +203,12 @@ p { margin: 0; }
   box-shadow: inset 0 0 80px rgba(200, 148, 108, 0.12), 0 0 120px rgba(200, 148, 108, 0.12);
   animation: spin 40s linear infinite;
 }
+@media (max-width: 959px) {
+  /* no celular o círculo cabe na altura da imagem e não encosta no título */
+  .hero__ring { width: auto; height: 92%; }
+  .hero__visual { margin-bottom: 12px; }
+}
+.hero .eyebrow::before { display: none; }
 .hero__ring::before {
   content: ""; position: absolute; top: -4px; left: 50%; width: 8px; height: 8px; border-radius: 50%;
   background: var(--copper-2); box-shadow: 0 0 18px var(--copper-2);
